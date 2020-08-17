@@ -48,11 +48,11 @@ if ( ! function_exists( 'mr_theme_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'mr-theme' ),
-			)
-		);
+		// register_nav_menus(
+		// 	array(
+		// 		'menu-1' => esc_html__( 'Primary', 'mr-theme' ),
+		// 	)
+		// );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -177,4 +177,64 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Load navbar bootstrap 4
+ */
+function wpse154485_add_aria_haspopup_atts( $atts, $item, $args ) {
+	if (in_array('menu-item-has-children', $item->classes)) {
+	  $atts['class'] = 'dropdown-toggle';
+	  $atts['id'] = 'navbarDropdownMenuLink';
+	  $atts['data-toggle'] = 'dropdown';
+  
+	}
+  
+	return $atts;
+  }
+  add_filter( 'nav_menu_link_attributes', 'wpse154485_add_aria_haspopup_atts', 10, 3 );
+  
+  function my_nav_menu_submenu_css_class( $classes ) {
+	$classes[] = 'dropdown-menu';
+	$classes['aria-labelledby'] = 'navbarDropdownMenuLink';
+	return $classes;
+  }
+  add_filter( 'nav_menu_submenu_css_class', 'my_nav_menu_submenu_css_class' );
+  
+  
+  function special_nav_class($classes, $item){
+	if( in_array('current-menu-item', $classes) ){
+			$classes[] = 'active ';
+	}
+  
+	if( in_array('menu-item-has-children', $classes) ){
+	$classes[] = 'dropdown ';
+	}
+  
+  if( in_array('menu-item', $classes) ){
+	$classes[] = 'nav-item ';
+  }
+  
+	   return $classes;
+  }
+  add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+if ( ! file_exists( get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php' ) ) {
+    // File does not exist... return an error.
+    return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+    // File exists... require it.
+    require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+}
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );
 
