@@ -19,10 +19,12 @@ jQuery.noConflict();
         });
 
         jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 50) {
+            if (jQuery(this).scrollTop() > 10) {
                 jQuery('.menu').addClass('fixed-top');
+                jQuery('.menu').addClass('menu-fixed');
             } else {
                 jQuery('.menu').removeClass('fixed-top');
+                jQuery('.menu').removeClass('menu-fixed');
             }
         });
 

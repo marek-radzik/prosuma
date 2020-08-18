@@ -1,3 +1,7 @@
+.site-footer a {
+    color: #08a742 !important;
+}
+
 .scrollup-mr {
     width: 64px;
     height: 64px;
@@ -9,4 +13,42 @@
     cursor: pointer;
     display: none;
     z-index: 2;
+}
+
+.menu {
+    background: #fff;
+    transition: all 1.2s;
+}
+
+.menu-fixed {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
+    box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #08a742;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #08a742;
+}
+
+.site-footer {
+    color: #fff;
+    background: #26292c;
+    position: relative;
+    bottom: -25px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar li {
+        text-align: center;
+        margin-left: -17%;
+        margin-top: 10px;
+    }
 }

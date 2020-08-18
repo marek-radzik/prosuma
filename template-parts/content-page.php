@@ -12,13 +12,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-		<div class="breadcrumbs">Du bist hier: <?php
-												if (function_exists('bcn_display')) {
-													bcn_display();
-												}
-												?>
-		</div>
+
+		<?php if (!is_home() && !is_front_page()) { ?>
+
+			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+
+			<div class="breadcrumbs">Du bist hier: <?php
+													if (function_exists('bcn_display')) {
+														bcn_display();
+													}
+													?>
+			</div>
+
+		<?php } ?>
+
 	</header><!-- .entry-header -->
 
 	<?php mr_theme_post_thumbnail(); ?>

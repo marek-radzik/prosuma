@@ -40,13 +40,32 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'mr-theme'); ?></a>
 
 		<header id="masthead" class="site-header">
-			<nav class="navbar navbar-expand-md navbar-light bg-light menu" role="navigation">
+			<nav class="navbar navbar-expand-md navbar-light menu" role="navigation">
 				<div class="container">
 					<a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/main-logo.png" alt="personal recruiting ost">
+						<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/main-logo.png" alt="personal recruiting ost"> -->
+						<div class="site-branding">
+							<?php
+							the_custom_logo();
+							if (is_front_page() && is_home()) :
+							?>
+								<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+							<?php
+							else :
+							?>
+								<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+							<?php
+							endif;
+							$mr_theme_description = get_bloginfo('description', 'display');
+							if ($mr_theme_description || is_customize_preview()) :
+							?>
+								<p class="site-description"><?php echo $mr_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+															?></p>
+							<?php endif; ?>
+						</div><!-- .site-branding -->
 					</a>
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
+					<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<?php
