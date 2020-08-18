@@ -1,5 +1,25 @@
-.site-footer a {
-    color: #08a742 !important;
+$base-color: #08a742;
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("/wp-content/themes/mr-theme/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Roboto" !important;
+    font-size: 1.2rem !important;
+}
+
+.site-footer {
+    color: #fff;
+    background: #26292c;
+    position: relative;
+    bottom: -32px;
+
+    a {
+        color: $base-color !important;
+    }
 }
 
 .scrollup-mr {
@@ -30,19 +50,12 @@
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-    color: #08a742;
+    color: $base-color;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #08a742;
-}
-
-.site-footer {
-    color: #fff;
-    background: #26292c;
-    position: relative;
-    bottom: -25px;
+    color: $base-color;
 }
 
 @media only screen and (max-width: 700px) {
