@@ -2,8 +2,6 @@ jQuery.noConflict();
 
 (function ($) {
     $(document).ready(function () {
-        // WOW
-        new WOW().init();
 
         //nav up 	  
         jQuery('.scrollup-mr').click(function () {
@@ -28,47 +26,19 @@ jQuery.noConflict();
             }
         });
 
-        //slick
-        //settings to slider
-        // jQuery('.recommended-slider').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     autoplay: true,
-        //     autoplaySpeed: 3000,
-        //     adaptiveHeight: true,
-        //     mobileFirst: true,
-        //     dots: false,
-        //     arrows: false,
-        //     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Prev" type="button"><i class="fas fa-angle-left"></i></button>',
-        //     nextArrow: '<button class="slick-next slick-arrow" aria-label="Prev" type="button"><i class="fas fa-angle-right"></i></button>',
-        //     responsive: [
-        //         {
-        //             breakpoint: 480,
-        //             settings: {
-        //                 slidesToShow: 3,
-        //                 slidesToScroll: 1,
-        //                 autoplay: true,
-        //                 autoplaySpeed: 3000,
-        //                 adaptiveHeight: true,
-        //                 mobileFirst: true,
-        //                 dots: false,
-        //                 arrows: false
-        //             }
-        //         },
-        //         {
-        //             breakpoint: 1200,
-        //             settings: {
-        //                 slidesToShow: 4,
-        //                 slidesToScroll: 1,
-        //                 autoplay: true,
-        //                 autoplaySpeed: 3000,
-        //                 adaptiveHeight: true,
-        //                 mobileFirst: true,
-        //                 dots: false,
-        //                 arrows: true
-        //             }
-        //         }
-        //     ]
-        // });
+        // Select all links with hashes
+        jQuery('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+                var target = jQuery(this.hash);
+                target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    jQuery('html,body').animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 }(jQuery));

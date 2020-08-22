@@ -1,4 +1,4 @@
-$base-color: #08a742;
+$base-color: #3aaa35;
 
 @font-face {
     font-family: "Roboto";
@@ -11,11 +11,27 @@ body {
     font-size: 1.2rem !important;
 }
 
-.site-footer {
-    color: #fff;
+.entry-header {
     background: #26292c;
+    color: #fff;
+
+    a {
+        color: $base-color !important;
+    }
+}
+
+.section-contact {
+    background: #26292c;
+    color: #fff;
+
+    a {
+        color: $base-color !important;
+    }
+}
+
+.site-footer {
+    color: #26292c;
     position: relative;
-    bottom: -32px;
 
     a {
         color: $base-color !important;
@@ -41,6 +57,7 @@ body {
 }
 
 .menu-fixed {
+    opacity: 0.9;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
     box-shadow: 0px 0px 20px 0px rgba(217, 217, 217, 1);
@@ -56,6 +73,12 @@ body {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: $base-color;
+}
+
+#primary {
+    position: relative;
+    top: -45px;
+    min-height: 60vh;
 }
 
 @media only screen and (max-width: 700px) {

@@ -17,13 +17,6 @@
 
 			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
-			<div class="breadcrumbs">Du bist hier: <?php
-													if (function_exists('bcn_display')) {
-														bcn_display();
-													}
-													?>
-			</div>
-
 		<?php } ?>
 
 	</header><!-- .entry-header -->

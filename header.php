@@ -25,12 +25,6 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
-	<!-- Font Awesome 5 -->
-	<script defer src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.min.js"></script>
-
-	<!--WOW ANIMATE-->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
-
 	<?php wp_head(); ?>
 </head>
 
@@ -40,10 +34,9 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'mr-theme'); ?></a>
 
 		<header id="masthead" class="site-header">
-			<nav class="navbar navbar-expand-md navbar-light menu" role="navigation">
+			<nav class="pt-4 navbar navbar-expand-md navbar-light menu" role="navigation">
 				<div class="container">
 					<a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-						<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/main-logo.png" alt="personal recruiting ost"> -->
 						<div class="site-branding">
 							<?php
 							the_custom_logo();
@@ -65,7 +58,7 @@
 						</div><!-- .site-branding -->
 					</a>
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
+					<button class="mb-4 navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<?php

@@ -14,10 +14,10 @@ get_header();
 <main id="primary" class="site-main">
 	<div class="container text-center">
 
-		<section class="error-404 not-found">
+		<section class="mt-4 error-404 not-found">
 			<header class="page-header">
-				<i class="mt-4 far fa-frown fa-5x"></i>
-				<h2 class="page-title"><?php esc_html_e('Entschuldigung, die ausgewählte Seite existiert nicht.', 'mr-theme'); ?></h2>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/404.jpg" alt="page not found" />
+				<h2 class="page-title mb-4"><?php esc_html_e('Entschuldigung, die ausgewählte Seite existiert nicht.', 'mr-theme'); ?></h2>
 			</header><!-- .page-header -->
 		</section><!-- .error-404 -->
 

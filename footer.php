@@ -12,6 +12,12 @@
 
 ?>
 
+<div class="section-contact">
+	<div class="container pt-4 pb-4">
+		kontakt
+	</div>
+</div>
+
 <footer id="colophon" class="site-footer">
 	<div class="container text-center pt-4 pb-4">
 		<div class="site-info">
@@ -19,6 +25,7 @@
 			/* translators: 1: Theme name, 2: Theme author. */
 			echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';
 			?>
+			<!-- <a href='https://pl.freepik.com/wektory/technologia'>Technologia plik wektorowy utworzone przez freepik - pl.freepik.com</a> -->
 		</div><!-- .site-info -->
 	</div>
 </footer><!-- #colophon -->
@@ -30,11 +37,9 @@
 <!-- Bootstrap 4.5.2 -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js" integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-<!-- WOW -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <!--Main JS-->
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
