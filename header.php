@@ -73,6 +73,8 @@
 						'walker'            => new WP_Bootstrap_Navwalker(),
 					));
 					?>
+					button
+					button
 				</div>
 			</nav>
 		</header><!-- #masthead -->
