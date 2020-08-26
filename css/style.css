@@ -8,13 +8,36 @@ body {
   font-size: 1.2rem !important;
 }
 
-.entry-header {
-  background: #26292c;
-  color: #fff;
+.site-branding {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.entry-header a {
-  color: #3aaa35 !important;
+.menu {
+  -webkit-box-shadow: 0px 0px 20px 0px #d9d9d9;
+  box-shadow: 0px 0px 20px 0px #d9d9d9;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #3aaa35;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #3aaa35;
+}
+
+#primary {
+  min-height: 60vh;
+}
+
+.primary-home {
+  position: relative;
+  top: -37px;
 }
 
 .section-contact {
@@ -48,34 +71,21 @@ body {
   z-index: 2;
 }
 
-.menu {
-  background: #fff;
-  -webkit-transition: all 1.2s;
-  transition: all 1.2s;
-}
-
-.menu-fixed {
-  opacity: 0.9;
-  -webkit-box-shadow: 0px 0px 20px 0px #d9d9d9;
-  box-shadow: 0px 0px 20px 0px #d9d9d9;
-}
-
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #3aaa35;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #3aaa35;
-}
-
-#primary {
+.polish-flag {
+  padding: 2px;
   position: relative;
-  top: -45px;
-  min-height: 60vh;
+  top: -4px;
+}
+
+.img-sign {
+  background-image: url("/wp-content/themes/mr-theme/img/sign.png");
+  height: 32px;
+  width: 32px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 700px) {

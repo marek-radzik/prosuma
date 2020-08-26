@@ -25,7 +25,8 @@
 			/* translators: 1: Theme name, 2: Theme author. */
 			echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';
 			?>
-			<!-- <a href='https://pl.freepik.com/wektory/technologia'>Technologia plik wektorowy utworzone przez freepik - pl.freepik.com</a> -->
+			<!-- <a href='https://freepik.com/'>freepik.com</a> -->
+			<!-- <a href='https:///flaticon.com/'>flaticon.com</a> -->
 		</div><!-- .site-info -->
 	</div>
 </footer><!-- #colophon -->

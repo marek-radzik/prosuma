@@ -16,15 +16,12 @@ jQuery.noConflict();
                 jQuery('.scrollup-mr').fadeOut();
         });
 
-        jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 10) {
-                jQuery('.menu').addClass('fixed-top');
-                jQuery('.menu').addClass('menu-fixed');
-            } else {
-                jQuery('.menu').removeClass('fixed-top');
-                jQuery('.menu').removeClass('menu-fixed');
-            }
+        //hover on sign btn
+        jQuery('.btn-sign').hover(function () {
+            jQuery('.img-sign').css('background-image', 'url(/wp-content/themes/mr-theme/img/sign-white.png)');
+        }, function () {
+            jQuery('.img-sign').css('background-image', 'url(/wp-content/themes/mr-theme/img/sign.png)');
         });
-        
+
     });
 }(jQuery));
