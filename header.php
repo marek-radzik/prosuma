@@ -25,6 +25,11 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
+	<?php if (!is_front_page()) { ?>
+		<!-- Font Awesome 5 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<?php } ?>
+
 	<?php wp_head(); ?>
 </head>
 
