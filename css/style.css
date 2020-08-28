@@ -58,6 +58,10 @@ body {
   color: #3aaa35 !important;
 }
 
+.site-footer a:hover {
+  color: #ccc !important;
+}
+
 .scrollup-mr {
   width: 64px;
   height: 64px;
@@ -86,6 +90,10 @@ body {
   display: inline-flex;
   vertical-align: inherit;
   background-repeat: no-repeat;
+}
+
+.fachkrafte-anfrage-content {
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {

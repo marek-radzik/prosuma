@@ -23,5 +23,10 @@ jQuery.noConflict();
             jQuery('.img-sign').css('background-image', 'url(/wp-content/themes/mr-theme/img/sign.png)');
         });
 
+        //fachkrafte-anfrage-btn
+        $('.fachkrafte-anfrage-btn').click(function () {
+            $('.fachkrafte-anfrage-content').toggle();
+        });
+
     });
 }(jQuery));

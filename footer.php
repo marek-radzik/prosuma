@@ -30,14 +30,19 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="container text-center pt-4 pb-4">
-		<div class="site-info">
-			<?php
-			/* translators: 1: Theme name, 2: Theme author. */
-			echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';
-			?>
-			<!-- <a href='https://freepik.com/'>freepik.com</a> -->
-			<!-- <a href='https:///flaticon.com/'>flaticon.com</a> -->
-		</div><!-- .site-info -->
+		<div class="row">
+			<div class="col-md-3"><a class="btn btn-outline-success" href="/impressum/">Impressum</a> <a class="btn btn-outline-success" href="#">Datenschutz</a></div>
+			<div class="col-md-6">
+				<div class="site-info">
+					<?php
+					/* translators: 1: Theme name, 2: Theme author. */
+					echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';
+					?>
+					<!-- <a href='https://freepik.com/'>freepik.com</a> -->
+					<!-- <a href='https:///flaticon.com/'>flaticon.com</a> -->
+				</div><!-- .site-info -->
+			</div>
+		</div>
 	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
