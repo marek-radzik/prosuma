@@ -22,7 +22,7 @@
 			<div class="col-md-6">
 				<div class="d-block mb-2"><i class="fas fa-arrow-right" aria-hidden="true"></i> D-21635 Jork, Groß Hove 5</div>
 				<div class="d-block mb-2"><i class="fas fa-phone" aria-hidden="true"></i> Telefon: + 49 (0) 4162 – 900 589</div>
-				<div class="d-block"><i class="far fa-envelope" aria-hidden="true"></i> E-Mail: contact@pro-suma.com</div>
+				<div class="d-block"><i class="far fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@pro-suma.com">contact@pro-suma.com</a></div>
 			</div>
 		</div>
 	</div>
