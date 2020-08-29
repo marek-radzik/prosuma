@@ -105,7 +105,11 @@ body {
 
 .dropdown-toggle:hover,
 .dropdown-toggle:active {
-  color: #3aaa35;
+  color: #3aaa35 !important;
+}
+
+.dropdown-toggle:visited {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-item:visited {
