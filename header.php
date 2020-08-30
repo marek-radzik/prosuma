@@ -86,7 +86,7 @@
 						?>
 					</div>
 					<div class="col-md-3 text-center mt-2">
-						<button class="btn btn-outline-success  mr-2 btn-sign"><span class="img-sign"></span> <?php esc_html_e('Jetzt Personal anfragen', 'mr-theme'); ?></button><a href="/kwestionariusz-osobowy/" class="btn polish-flag mt-2"><img src="<?php echo get_template_directory_uri(); ?>/img/poland.png" alt="pro-suma.com polish language" /></a>
+						<a href="/kontaktformular-kunde-schritt-1-von-4/" class="btn btn-outline-success  mr-2 btn-sign"><span class="img-sign"></span> <?php esc_html_e('Jetzt Personal anfragen', 'mr-theme'); ?></a><a href="/kwestionariusz-osobowy/" class="btn polish-flag mt-2"><img src="<?php echo get_template_directory_uri(); ?>/img/poland.png" alt="pro-suma.com polish language" /></a>
 					</div>
 					</nav>
 		</header><!-- #masthead -->

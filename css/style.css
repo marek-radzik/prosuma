@@ -116,6 +116,14 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.btn-outline-success:visited {
+  color: #28a745;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 700px) {
   .navbar li {
     text-align: center;

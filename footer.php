@@ -33,7 +33,7 @@
 		<div class="row">
 			<div class="col-md-3"><a class="btn btn-outline-success" href="/impressum/">Impressum</a> <a class="btn btn-outline-success" href="#">Datenschutz</a></div>
 			<div class="col-md-6">
-				<div class="site-info">
+				<div class="site-info mt-2">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
 					echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';
