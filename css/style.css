@@ -41,12 +41,12 @@ body {
 }
 
 .section-contact {
-  background: #26292c;
+  background: #3aaa35;
   color: #fff;
 }
 
 .section-contact a {
-  color: #3aaa35 !important;
+  color: #fff !important;
 }
 
 .site-footer {
@@ -58,8 +58,13 @@ body {
   color: #3aaa35 !important;
 }
 
-.site-footer a:hover {
-  color: #ccc !important;
+.site-footer .impressum,
+.site-footer .datenschutz {
+  font-size: 16px;
+}
+
+.site-footer .site-info {
+  font-size: 16px;
 }
 
 .scrollup-mr {
@@ -73,23 +78,6 @@ body {
   cursor: pointer;
   display: none;
   z-index: 2;
-}
-
-.polish-flag {
-  padding: 2px;
-  position: relative;
-  top: -4px;
-}
-
-.img-sign {
-  background-image: url("/wp-content/themes/mr-theme/img/sign.png");
-  height: 32px;
-  width: 32px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: inherit;
-  background-repeat: no-repeat;
 }
 
 .fachkrafte-anfrage-content {
@@ -112,16 +100,24 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.dropdown-toggle::after {
+  content: none;
+}
+
 .dropdown-item:visited {
   color: rgba(0, 0, 0, 0.5);
 }
 
 .btn-outline-success:visited {
-  color: #28a745;
+  color: #3aaa35;
 }
 
 .btn-outline-success:hover {
   color: #fff;
+}
+
+.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated {
+  padding: 0 !important;
 }
 
 @media only screen and (max-width: 700px) {

@@ -20,7 +20,7 @@
 				<div class="mt-2 d-block"><?php esc_html_e('Ein Service der überzeugt!', 'mr-theme'); ?></div>
 			</div>
 			<div class="col-md-6">
-				<div class="d-block mb-2"><i class="fas fa-arrow-right" aria-hidden="true"></i> D-21635 Jork, Groß Hove 5</div>
+				<div class="d-block mb-2"><i class="fas fa-home" aria-hidden="true"></i> D-21635 Jork, Groß Hove 5</div>
 				<div class="d-block mb-2"><i class="fas fa-phone" aria-hidden="true"></i> Telefon: + 49 (0) 4162 – 900 589</div>
 				<div class="d-block"><i class="far fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@pro-suma.com">contact@pro-suma.com</a></div>
 			</div>
@@ -31,9 +31,9 @@
 <footer id="colophon" class="site-footer">
 	<div class="container text-center pt-4 pb-4">
 		<div class="row">
-			<div class="col-md-3"><a class="btn btn-outline-success" href="/impressum/">Impressum</a> <a class="btn btn-outline-success" href="#">Datenschutz</a></div>
+			<div class="col-md-3"><a class="impressum" href="/impressum/">Impressum</a> <a class="datenschutz" href="/datenschutz/">Datenschutz</a></div>
 			<div class="col-md-6">
-				<div class="site-info mt-2">
+				<div class="site-info">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
 					echo date('Y') . ' &copy; <a href="https://pro-suma.com">pro-suma.com</a>';

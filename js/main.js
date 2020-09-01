@@ -16,13 +16,6 @@ jQuery.noConflict();
                 jQuery('.scrollup-mr').fadeOut();
         });
 
-        //hover on sign btn
-        jQuery('.btn-sign').hover(function () {
-            jQuery('.img-sign').css('background-image', 'url(/wp-content/themes/mr-theme/img/sign-white.png)');
-        }, function () {
-            jQuery('.img-sign').css('background-image', 'url(/wp-content/themes/mr-theme/img/sign.png)');
-        });
-
         //fachkrafte-anfrage-btn
         $('.fachkrafte-anfrage-btn').click(function () {
             $('.fachkrafte-anfrage-content').toggle();

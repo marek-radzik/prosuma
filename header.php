@@ -71,7 +71,7 @@
 							<span class="navbar-toggler-icon"></span>
 						</button>
 					</div>
-					<div class="col-md-6 mt-2">
+					<div class="col-md-9">
 						<?php
 						wp_nav_menu(array(
 							'theme_location'    => 'primary',
@@ -84,9 +84,6 @@
 							'walker'            => new WP_Bootstrap_Navwalker(),
 						));
 						?>
-					</div>
-					<div class="col-md-3 text-center mt-2">
-						<a href="/kontaktformular-kunde-schritt-1-von-4/" class="btn btn-outline-success  mr-2 btn-sign"><span class="img-sign"></span> <?php esc_html_e('Jetzt Personal anfragen', 'mr-theme'); ?></a><a href="/kwestionariusz-osobowy/" class="btn polish-flag mt-2"><img src="<?php echo get_template_directory_uri(); ?>/img/poland.png" alt="pro-suma.com polish language" /></a>
 					</div>
 					</nav>
 		</header><!-- #masthead -->
