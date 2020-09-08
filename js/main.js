@@ -21,5 +21,9 @@ jQuery.noConflict();
             $('.fachkrafte-anfrage-content').toggle();
         });
 
+        //birthday date field
+        $('.mr-date').attr('placeholder', '');
+        $('.mr-date').attr('autocomplete', 'off');
+
     });
 }(jQuery));
