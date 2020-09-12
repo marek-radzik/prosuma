@@ -30,6 +30,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 	<?php } ?>
 
+	<!-- Jquery Cookies -->
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
